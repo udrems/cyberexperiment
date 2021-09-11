@@ -1,3 +1,13 @@
-# from django.db import models
+from django.db import models
 
-# Create your models here.
+
+class TimeStamp(models.Model):
+    """timestamp"""
+
+    class Meta:
+        abstract = True
+
+
+class Genera(models.Model):
+    class Meta:
+        abstract = True
