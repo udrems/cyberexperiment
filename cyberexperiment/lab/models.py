@@ -29,7 +29,7 @@ class LabMembership(TimeStamp):
         return self.membership_type.name
 
 
-class UserLabMembership(TimeStamp):
+class UserMembership(TimeStamp):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     payment_customer_id = models.CharField(max_length=50)
     membership_type = models.ForeignKey(LabMembership, on_delete=models.CASCADE)
@@ -40,7 +40,7 @@ class UserLabMembership(TimeStamp):
 
 class LabSubscription(TimeStamp):
     active = models.BooleanField(default=False)
-    user_membership = models.ForeignKey(UserLabMembership, on_delete=models.CASCADE)
+    user_membership = models.ForeignKey(UserMembership, on_delete=models.CASCADE)
     payment_subcription_id = models.CharField(max_length=50)
 
     def __str__(self):
