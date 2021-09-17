@@ -307,3 +307,10 @@ REST_FRAMEWORK = {
 CORS_URLS_REGEX = r"^/api/.*$"
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+if DEBUG:
+    STRIPE_PUBLISHABLE_KEY = ""
+    STRIPE_SECRET_KEY = ""
+else:
+    STRIPE_PUBLISHABLE_KEY = ""
+    STRIPE_SECRET_KEY = ""
