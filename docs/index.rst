@@ -11,7 +11,6 @@ Welcome to cyberexperiment's documentation!
    :caption: Contents:
 
    howto
-   pycharm/configuration
    users
 
 
