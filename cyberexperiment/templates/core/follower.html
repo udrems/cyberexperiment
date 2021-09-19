@@ -1,0 +1,506 @@
+{% extends "./base/base.html"%} {% load i18n %} {% load static %}
+{% block title %}Home | follower{% endblock%} {% block content %}
+		<!-- Main content Start -->
+        <div class="main-content">
+            <!-- Banner Section Start -->
+            <div id="rs-banner" class="rs-banner style13">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 md-mb-50">
+                            <div class="banner-content">
+                                <span class="sub-text">Build Your Future </span>
+                                <h2 class="title">Choose 2500+ Online Courses With New Additions</h2>
+                                <p class="desc">Take your learning organisation to the next level.</p>
+                                <div class="search-widget pr-100 md-pr-15">
+                                    <div class="search-wrap">
+                                        <input type="search" placeholder="Search here what do you  went to learn?" name="s" class="search-input" value="">
+                                        <button type="submit" value="Search"><i class=" flaticon-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-right">
+                            <div class="banner-img">
+                                <img src="{% static 'core/assets/images/banner/home15/1.png' %}" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rs-animation-part">
+                    <div class="animate-style one">
+                        <img class="rotated-style" src="{% static 'core/assets/images/banner/home15/icon-1.png' %}" alt="Banner">
+                    </div>
+                    <div class="animate-style two">
+                        <img class="rotated-style" src="{% static 'core/assets/images/banner/home15/icon-2.png' %}" alt="Banner">
+                    </div>
+                    <div class="animate-style three">
+                        <img class="rotated-style" src="{% static 'core/assets/images/banner/home15/icon-3.png' %}" alt="Banner">
+                    </div>
+                    <div class="animate-style three">
+                        <img src="{% static 'core/assets/images/banner/home15/icon-3.png' %}" alt="Banner">
+                    </div>
+                    <div class="animate-style four">
+                        <img class="veritcal-two" src="{% static 'core/assets/images/banner/home15/online-learn.png' %}" alt="Banner">
+                    </div>
+                    <div class="animate-style five">
+                        <img class="rotated-style" src="{% static 'core/assets/images/banner/home15/icon-2.png' %}" alt="Banner">
+                    </div>
+                    <div class="animate-style six">
+                        <img src="{% static 'core/assets/images/banner/home15/2.png' %}" alt="Banner">
+                    </div>
+                </div>
+            </div>
+            <!-- Banner Section End -->
+
+            <!-- Categors Section Start -->
+            <div class="rs-categories style2 pt-100 pb-100 md-pt-70 md-pb-70">
+                <div class="container">
+                    <div class="sec-title6 text-center mb-55 md-mb-25">
+                        <span class="sub-title pb-10">Browse Categories</span>
+                       <h2 class="title title2">Popular Categories to Learn</h2>
+                    </div>
+                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="5" data-margin="30" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="true" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="true" data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="true" data-ipad-device-dots2="false" data-md-device="5" data-md-device-nav="true" data-md-device-dots="false">
+                        <div class="categories-items">
+                            <div class="cate-item">
+                                <div class="cate-img">
+                                    <img src="{% static 'core/assets/images/categories/style1/1.png' %}" alt="">
+                                </div>
+                                <div class="cate-content">
+                                    <h3 class="title"><a href="#">Artificial Intelligence</a></h3>
+                                    <span class="course-qnty"> 02 Courses </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="categories-items">
+                            <div class="cate-item">
+                                <div class="cate-img">
+                                    <img src="{% static 'core/assets/images/categories/style1/2.png' %}" alt="">
+                                </div>
+                                <div class="cate-content">
+                                    <h3 class="title"><a href="#">Business Studies</a></h3>
+                                    <span class="course-qnty"> 02 Courses </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="categories-items">
+                            <div class="cate-item">
+                                <div class="cate-img">
+                                    <img src="{% static 'core/assets/images/categories/style1/3.png' %}" alt="">
+                                </div>
+                                <div class="cate-content">
+                                    <h3 class="title"><a href="#">Artificial Intelligence</a></h3>
+                                    <span class="course-qnty"> 02 Courses </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="categories-items">
+                            <div class="cate-item">
+                                <div class="cate-img">
+                                    <img src="{% static 'core/assets/images/categories/style1/4.png' %}" alt="">
+                                </div>
+                                <div class="cate-content">
+                                    <h3 class="title"><a href="#">Civil Engineering</a></h3>
+                                    <span class="course-qnty"> 02 Courses </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="categories-items">
+                            <div class="cate-item">
+                                <div class="cate-img">
+                                    <img src="{% static 'core/assets/images/categories/style1/5.png' %}" alt="">
+                                </div>
+                                <div class="cate-content">
+                                    <h3 class="title"><a href="#">Computer Engineering</a></h3>
+                                    <span class="course-qnty"> 02 Courses </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="categories-items">
+                            <div class="cate-item">
+                                <div class="cate-img">
+                                    <img src="{% static 'core/assets/images/categories/style1/6.png' %}" alt="">
+                                </div>
+                                <div class="cate-content">
+                                    <h3 class="title"><a href="#">General Education</a></h3>
+                                    <span class="course-qnty"> 02 Courses </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec-title5 text-center mt-40 md-mt-25 pb-100 md-pb-70">
+                        <div class="description title-color">
+                            Start Learning With Our Trending Courses.
+                            <span><a href="#">View All courses<i class="flaticon-right-arrow"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cta Section Start -->
+                <div class="rs-cta home-style14">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8 col-md-12 md-mb-30">
+                                <div class="content-part">
+                                    <span class="sub-text">Join With Us</span>
+                                    <h2 class="title">20% Offer Running - Join Today</h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <div class="btn-part text-right">
+                                    <a class="readon2 cta-btn" href="#">Get started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cta Section End -->
+            </div>
+            <!-- Categors Section End -->
+
+            <!-- Popular Courses Section Start -->
+            <div id="rs-popular-courses" class="rs-popular-courses style6 gray-bg4 pt-100 pb-100 md-pt-70 md-pb-70">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-50">
+                            <div class="sec-title6">
+                               <span class="sub-title pb-10">Featured Courses</span>
+                               <h2 class="title title2">Explore Our Courses</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="gridFilter style2 modify1 mb-10">
+                                <button class="active" data-filter="*">All</button>
+                                <button data-filter=".filter1">Civil Engineering</button>
+                                <button data-filter=".filter2">Lawyer Course</button>
+                                <button data-filter=".filter3">Life Course</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row grid">
+                        <div class="col-lg-3 col-md-6 grid-item filter1">
+                            <div class="courses-item mb-30">
+                                <div class="img-part">
+                                    <a href="#"><img src="{% static 'core/assets/images/courses/style5/1.jpg' %}" alt="Courses"></a>
+                                </div>
+                                <div class="content-part">
+                                    <h3 class="title"><a href="course-single.html">Fitness Development Strategy Buildup Laoreet Malesuada</a></h3>
+                                    <ul class="meta-part">
+                                        <li><span class="price">Free</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 grid-item filter4 filter1">
+                            <div class="courses-item mb-30">
+                                <div class="img-part">
+                                    <a href="#"><img src="{% static 'core/assets/images/courses/style5/2.jpg' %}" alt="Courses"></a>
+                                </div>
+                                <div class="content-part">
+                                    <h3 class="title"><a href="course-single.html">Lawyer Advance Mental Simulator Handle Nulla Tellus</a></h3>
+                                    <ul class="meta-part">
+                                        <li><span class="price">$22.00</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 grid-item filter3 filter2">
+                            <div class="courses-item mb-30">
+                                <div class="img-part">
+                                    <a href="#"><img src="{% static 'core/assets/images/courses/style5/3.jpg' %}" alt="Courses"></a>
+                                </div>
+                                <div class="content-part">
+                                    <h3 class="title"><a href="course-single.html">Focus On Building Amazing Empire Strategy Tempor Justo</a></h3>
+                                    <ul class="meta-part">
+                                        <li><span class="price">$33.00</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 grid-item filter1 filter2">
+                            <div class="courses-item mb-30">
+                                <div class="img-part">
+                                    <a href="#"><img src="{% static 'core/assets/images/courses/style5/4.jpg' %}" alt="Courses"></a>
+                                </div>
+                                <div class="content-part">
+                                    <h3 class="title"><a href="course-single.html">Dream Body Weight Loss & Nutrition Simulator</a></h3>
+                                    <ul class="meta-part">
+                                        <li><span class="price">$35.00</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 grid-item filter2 filter4">
+                            <div class="courses-item mb-30">
+                                <div class="img-part">
+                                    <a href="#"><img src="{% static 'core/assets/images/courses/style5/5.jpg' %}" alt="Courses"></a>
+                                </div>
+                                <div class="content-part">
+                                    <h3 class="title"><a href="course-single.html">Coaches Let You Vent, Then They Offer Advice</a></h3>
+                                    <ul class="meta-part">
+                                        <li><span class="price">$25.00</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 grid-item filter1 filter4">
+                            <div class="courses-item mb-30">
+                                <div class="img-part">
+                                    <a href="#"><img src="{% static 'core/assets/images/courses/style5/6.jpg' %}" alt="Courses"></a>
+                                </div>
+                                <div class="content-part">
+                                    <h3 class="title"><a href="course-single.html">Life coaches on break the first rule of therapy</a></h3>
+                                    <ul class="meta-part">
+                                        <li><span class="price">$26.00</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 grid-item filter1 filter6">
+                            <div class="courses-item">
+                                <div class="img-part">
+                                    <a href="#"><img src="{% static 'core/assets/images/courses/style5/7.jpg' %}" alt="Courses"></a>
+                                </div>
+                                <div class="content-part">
+                                    <h3 class="title"><a href="course-single.html">The Life Coach Different from a Therapist?</a></h3>
+                                    <ul class="meta-part">
+                                        <li><span class="price">$22.00</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 grid-item filter6 filter2">
+                            <div class="courses-item">
+                                <div class="img-part">
+                                   <a href="#"><img src="{% static 'core/assets/images/courses/style5/8.jpg' %}" alt="Courses"></a>
+                                </div>
+                                <div class="content-part">
+                                    <h3 class="title"><a href="course-single.html">Coaches are The Only Ones Trained in Tony Robbins</a></h3>
+                                    <ul class="meta-part">
+                                        <li><span class="price">$17.00</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec-title5 text-center mt-20">
+                        <div class="description title-color">
+                            Start Learning With Our Trending Courses.
+                            <span><a href="#">View All courses<i class="flaticon-right-arrow"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Popular Courses Section End -->
+
+            <!-- Video Section Start -->
+            <div class="rs-video">
+               <div class="row margin-0">
+                   <div class="col-lg-6 padding-0">
+                       <div class="video-item">
+                           <div class="icon-area">
+                               <a class="popup-videos pt-20" href="https://www.youtube.com/watch?v=atMUy_bPoQI">
+                                   <i class="fa fa-play"></i>
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-6 padding-0">
+                       <!-- Services Section Start -->
+                       <div class="rs-services style8 bg13">
+                           <div class="row">
+                               <div class="col-lg-6 col-md-6 col-sm-6 mb-40">
+                                   <div class="services-item">
+                                       <div class="services-icon">
+                                           <img src="{% static 'core/assets/images/features/icon/1.png' %}" alt="Services">
+                                       </div>
+                                       <div class="services-title"><h2 class="title"> 2500+ Online Courses</h2></div>
+                                       <p class="services-txt"> Enjoy a variety of fresh topics</p>
+                                   </div>
+                               </div>
+                               <div class="col-lg-6 col-md-6 col-sm-6 mb-40">
+                                   <div class="services-item">
+                                       <div class="services-icon">
+                                           <img src="{% static 'core/assets/images/features/icon/2.png' %}" alt="Services">
+                                       </div>
+                                       <div class="services-title"><h2 class="title"> 2500+ Online Courses</h2></div>
+                                       <p class="services-txt"> Enjoy a variety of fresh topics</p>
+                                   </div>
+                               </div>
+                               <div class="col-lg-6 col-md-6 col-sm-6 xs-mb-40">
+                                   <div class="services-item">
+                                       <div class="services-icon">
+                                           <img src="{% static 'core/assets/images/features/icon/3.png' %}" alt="Services">
+                                       </div>
+                                       <div class="services-title"><h2 class="title"> 2500+ Online Courses</h2></div>
+                                       <p class="services-txt"> Enjoy a variety of fresh topics</p>
+                                   </div>
+                               </div>
+                               <div class="col-lg-6 col-md-6 col-sm-6">
+                                   <div class="services-item">
+                                       <div class="services-icon">
+                                           <img src="{% static 'core/assets/images/features/icon/4.png' %}" alt="Services">
+                                       </div>
+                                       <div class="services-title"><h2 class="title"> 2500+ Online Courses</h2></div>
+                                       <p class="services-txt"> Enjoy a variety of fresh topics</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Services End Start -->
+                   </div>
+               </div>
+            </div>
+            <!-- Video Section End -->
+
+            <!-- Team Section Start -->
+            <div id="rs-team" class="rs-team home-style15 pt-100 pb-100 md-pt-70 md-pb-70">
+                <div class="container">
+                    <div class="sec-title6 text-center mb-50 md-mb-30">
+                       <span class="sub-title pb-10">Expert Instructors</span>
+                       <h2 class="title title2">World Best Instructors</h2>
+                    </div>
+                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="4" data-margin="30" data-autoplay="true" data-autoplay-timeout="7000" data-smart-speed="2000" data-dots="true" data-nav="false" data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="4" data-md-device-nav="false" data-md-device-dots="false">
+                        <div class="team-item">
+                            <div class="team-wrap">
+                                <div class="team-img">
+                                    <a href="#"><img src="{% static 'core/assets/images/team/style2/1.jpg' %}" alt=""></a>
+                                    <ul class="team-social-link">
+                                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                       <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="name"><a href="team-single.html">Monalisa Carrion</a></h3>
+                                    <span class="subject">Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-wrap">
+                                <div class="team-img">
+                                    <a href="#"><img src="{% static 'core/assets/images/team/style2/2.jpg' %}" alt=""></a>
+                                    <ul class="team-social-link">
+                                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                       <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="name"><a href="team-single.html">Jhon Pedrocas</a></h3>
+                                    <span class="subject">Professor</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-wrap">
+                                <div class="team-img">
+                                    <a href="#"><img src="{% static 'core/assets/images/team/style2/3.jpg' %}" alt=""></a>
+                                    <ul class="team-social-link">
+                                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                       <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="name"><a href="team-single.html">Melania Trump</a></h3>
+                                    <span class="subject">Principal</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-wrap">
+                                <div class="team-img">
+                                    <a href="#"><img src="{% static 'core/assets/images/team/style2/4.jpg' %}" alt=""></a>
+                                    <ul class="team-social-link">
+                                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                       <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="name"><a href="team-single.html">Hosaifa Albenian</a></h3>
+                                    <span class="subject">Vice Principal</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-wrap">
+                                <div class="team-img">
+                                    <a href="#"><img src="{% static 'core/assets/images/team/style2/5.jpg' %}" alt=""></a>
+                                    <ul class="team-social-link">
+                                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                       <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="name"><a href="team-single.html">Shuprio Shaa</a></h3>
+                                    <span class="subject">Assistant Director</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-wrap">
+                                <div class="team-img">
+                                    <a href="#"><img src="{% static 'core/assets/images/team/style2/6.jpg' %}" alt=""></a>
+                                    <ul class="team-social-link">
+                                       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                       <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="name"><a href="team-single.html">Lina Anthony</a></h3>
+                                    <span class="subject">Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Section End -->
+
+            <!-- Cta Section Start -->
+            <div class="rs-cta effects-layer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="effects-bg apply-bg">
+                                <div class="content-part">
+                                    <h2 class="title">Become An Instructor</h2>
+                                    <div class="description mb-27">Lorem ipsum dolor sit amet, consectetur adipisi elit, sed eius to mod tempor incididunt ut labor
+                                    ets.</div>
+                                    <div class="btn-part">
+                                        <a class="readon2 cta-btn" href="#">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="effects-bg enroll-bg">
+                               <div class="content-part">
+                                   <h2 class="title">Enroll Open for 2021</h2>
+                                   <div class="description mb-27">Lorem ipsum dolor sit amet, consectetur adipisi elit, sed eius to mod tempor incididunt ut labor
+                                   ets.</div>
+                                   <div class="btn-part">
+                                       <a class="readon2 cta-btn" href="#">Enroll Now</a>
+                                   </div>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cta Section End -->
+
+            {% include './utils.html' %}
+
+        </div>
+        <!-- Main content End -->
+{% endblock %}
