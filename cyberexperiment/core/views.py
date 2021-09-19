@@ -26,7 +26,7 @@ class EventView(TemplateView):
 
 
 class FollowerView(TemplateView):
-    template_name = "core/followe.html"
+    template_name = "core/follower.html"
 
 
 class InstructorView(TemplateView):
@@ -34,7 +34,7 @@ class InstructorView(TemplateView):
 
 
 class LoginView(TemplateView):
-    template_name = "core/loginhtml"
+    template_name = "core/login.html"
 
 
 class RegisterView(TemplateView):
