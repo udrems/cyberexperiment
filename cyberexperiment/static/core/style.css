@@ -213,87 +213,87 @@ ul {
   background-repeat: no-repeat;
 }
 .bg1 {
-  background: url(static/core/assets/images/bg/bg1.png);
+  background: url(cyberexperiment/static/core/assets/images/bg/bg1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .bg2 {
-  background: url(static/core//images/bg/bg2.jpg);
+  background: url("images/bg/bg2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .bg3 {
-  background: url(static/core/assets/images/bg/bg3.png);
+  background: url("images/bg/bg3.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
 }
 .bg4 {
-  background: url(static/core/assets/images/bg/home6/bg.png);
+  background: url("images/bg/home6/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .bg5 {
-  background: url(static/core/assets/images/bg/home7/bg.png);
+  background: url("images/bg/home7/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 5px;
 }
 .bg6 {
-  background: url(static/core/assets/images/bg/home-8-bg.jpg);
+  background: url("images/bg/home-8-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 .bg7 {
-  background: url(static/core/assets/images/bg/home8-bg2.jpg);
+  background: url("images/bg/home8-bg2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .bg8 {
-  background: url(static/core/assets/images/bg/home12/dotted.png);
+  background: url("images/bg/home12/dotted.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 50px 0 50px;
 }
 .bg9 {
-  background: url(static/core/assets/images/bg/home13/counter-bg.jpg);
+  background: url("images/bg/home13/counter-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 .bg10 {
-  background: url(static/core/assets/images/bg/home13/logo-bg.jpg);
+  background: url("images/bg/home13/logo-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 .bg11 {
-  background: url(static/core/assets/images/bg/home13/subscribe-bg.jpg);
+  background: url("images/bg/home13/subscribe-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 .bg12 {
-  background: url(static/core/assets/images/bg/home13/footer-bg.html);
+  background: url("images/bg/home13/footer-bg.html");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .bg13 {
-  background: url(static/core/assets/images/bg/video-text-bg15.jpg);
+  background: url("images/bg/video-text-bg15.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 140px 60px 140px 60px;
 }
 .course-shape-bg {
-  background: url(static/core/assets/images/bg/course-shape-bg.jpg);
+  background: url("images/bg/course-shape-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1013,7 +1013,7 @@ blockquote p {
   background: #1c335f;
 }
 .rs-video-home9 {
-  background: url(static/core/assets/images/video/video2.jpg);
+  background: url("images/video/video2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1023,7 +1023,7 @@ blockquote p {
   display: block;
 }
 .rs-video .video-item {
-  background: url(static/core/assets/images/bg/video-bg-15.jpg);
+  background: url("images/bg/video-bg-15.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 299px 0 299px 0;
