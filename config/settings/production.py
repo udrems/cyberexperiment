@@ -10,7 +10,7 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 #     "DJANGO_ALLOWED_HOSTS",
 #     default=["cyberexperiment.com", "cyberexperiment.herokuapp.com"],
 # )
-ALLOWED_HOSTS = ["*"]
+# ALLOWED_HOSTS = ["*"]
 # DATABASES
 # ------------------------------------------------------------------------------
 DATABASES["default"] = env.db("DATABASE_URL")  # noqa F405
