@@ -16,6 +16,7 @@ if READ_DOT_ENV_FILE:
     env.read_env(str(ROOT_DIR / ".env"))
 
 ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1", "*"]
+SECRET_KEY = "9Jgqg54U5qXxvc4sDBprVTCnOFJXADDiDFh0GRIKY2nc0m8zaWrfy7agAXE7711c"
 # GENERAL
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#debug
