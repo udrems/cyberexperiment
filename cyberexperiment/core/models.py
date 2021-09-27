@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.db import models
-from django.urls import redirect
+from django.shortcuts import redirect
 
 
 class TimeStamp(models.Model):
