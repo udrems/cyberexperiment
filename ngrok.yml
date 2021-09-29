@@ -1,0 +1,12 @@
+authtoken: 1l7GwdKNAvgP8GFwSUhBLpkWpCn_4b3xwSK7XMPE3jbNa82gb
+region: us
+console_ui: true
+web_addr: localhost:8000
+
+tunnels:
+  demo:
+    proto: http
+    addr: 9090
+    hostname: 127.0.0.1
+    inspect: false
+    auth: "demo:secret"

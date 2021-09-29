@@ -1,22 +1,65 @@
-{% extends "account/base.html" %}
+{% extends "account/base.html" %} {% load i18n %} {% load static %} {% load crispy_forms_tags %}
+{% block title %}{% translate "Sign In" %}{%endblock %}
+{% block content %}
 
-{% load i18n %}
-{% load crispy_forms_tags %}
+<!-- Main content Start -->
+<div class="main-content">
+  <!-- Breadcrumbs Start -->
+  <div class="rs-breadcrumbs breadcrumbs-overlay">
+    <div class="breadcrumbs-img">
+      <img
+        src="{% static 'core/assets/images/breadcrumbs/2.jpg' %}"
+        alt="Breadcrumbs Image"
+      />
+    </div>
+    <div class="breadcrumbs-text white-color">
+      <h1 class="page-title">{% translate "Create Account" %}</h1>
+      <ul>
+        <li>
+          <a class="active" href="{% url 'core:home' %}">Home</a>
+        </li>
+        <li>My Account</li>
+      </ul>
+    </div>
+  </div>
+  <!-- Breadcrumbs End -->
 
-{% block head_title %}{% translate "Signup" %}{% endblock %}
+  <!-- My Account Section Start -->
+  <div class="rs-login pt-100 pb-100 md-pt-70 md-pb-70">
+    <div class="container">
+      <div class="noticed">
+        <div class="main-part">
+          <div class="method-account">
+            <h2 class="login">Sign Up</h2>
+            <form
+              id="signup_form"
+              method="post"
+              action="{% url 'account_signup' %}"
+            >
+              {% csrf_token %} {{ form|crispy }} {% if redirect_field_value %}
+              <input
+                type="hidden"
+                name="{{ redirect_field_name }}"
+                value="{{ redirect_field_value }}"
+              />
+              {% endif %}
+              <button class="readon submit-btn" type="submit">
+                {% translate "Sign Up" %}
+              </button>
+              <div class="last-password">
+                <p>
+                Registered?
+                  <a href="{% url 'account_login' %}">Login</a>
+                </p>
+              </div>
+            </form>
 
-{% block inner %}
-<h1>{% translate "Sign Up" %}</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- My Account Section End -->
 
-<p>{% blocktranslate %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktranslate %}</p>
-
-<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-  {% csrf_token %}
-  {{ form|crispy }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <button class="btn btn-primary" type="submit">{% translate "Sign Up" %} &raquo;</button>
-</form>
-
-{% endblock %}
+  {% endblock %}
+</div>
