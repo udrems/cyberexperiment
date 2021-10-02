@@ -5,12 +5,11 @@ from .views import (
     BlogDetailView,
     BlogView,
     ContactView,
+    Dashboard,
     EventView,
     FollowerView,
     HomePageView,
     InstructorView,
-    LoginView,
-    RegisterView,
 )
 
 app_name = "core"
@@ -24,6 +23,5 @@ urlpatterns = [
     path("event/", EventView.as_view(), name="event"),
     path("follower/", FollowerView.as_view(), name="follower"),
     path("instructor/", InstructorView.as_view(), name="instructor"),
-    path("login/", LoginView.as_view(), name="login"),
-    path("register", RegisterView.as_view(), name="register"),
+    path("dashboard/", Dashboard.as_view(), name="dashboard"),
 ]
