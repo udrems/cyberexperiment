@@ -15,7 +15,8 @@
       ><img
         class="logo-inverse"
         src="{% static 'core/trans.png' %}"
-        alt="" width="150"
+        alt=""
+        width="150"
     /></a>
   </div>
   <div class="top-category">
@@ -25,9 +26,9 @@
           ><i class="uil uil-apps"></i
         ></a>
         <div class="menu dropdown_category5">
-        {% for cat in category_object %}
+          {% for cat in category_object %}
           <a href="#" class="item channel_item">{{cat.title}}</a>
-        {% endfor %}
+          {% endfor %}
         </div>
       </div>
     </div>
@@ -180,16 +181,16 @@
                 </div>
                 <span
                   ><a
-                    href="https://gambolthemes.net/cdn-cgi/l/email-protection"
+                    href="mailto:{{user.email}}"
                     class="__cf_email__"
-                    data-cfemail="4720262a25282b7e737407202a262e2b6924282a"
-                    >[email&#160;protected]</a
+                    data-cfemail=""
+                    >{{user.email}}</a
                   ></span
                 >
               </div>
             </div>
-            <a href="my_instructor_profile_view.html" class="dp_link_12"
-              >View Instructor Profile</a
+            <a href="{% url 'users:profile' %}" class="dp_link_12"
+              >{{user.username}}'s Profile</a
             >
           </div>
           <div class="night_mode_switch__btn">
@@ -200,8 +201,10 @@
               </span>
             </a>
           </div>
-          <a href="instructor_dashboard.html" class="item channel_item"
-            >Cyber Experiment dashboard</a
+          <a
+            href="{% url 'users:creator_dashboard' %}"
+            class="item channel_item"
+            >Creator dashboard</a
           >
           <a href="membership.html" class="item channel_item"
             >Paid Memberships</a
