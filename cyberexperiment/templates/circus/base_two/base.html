@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, shrink-to-fit=9" />
+    <meta name="description" content="Gambolthemes" />
+    <meta name="author" content="Gambolthemes" />
+    <title>{% block title %} {% endblock title %}</title>
+
+    <link
+      rel="icon"
+      type="{% static 'circus/image/png' %}"
+      href="{% static 'circus/images/fav.png' %}"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700,500"
+      rel="stylesheet"
+    />
+      <link href="{% static 'circus/css/instructor-dashboard.css' %}" rel="stylesheet" />
+
+ <link href="{% static 'circus/css/datepicker.min.css' %}" rel="stylesheet" />
+    <link
+      href="{% static 'circus/vendor/unicons-2.0.1/css/unicons.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'circus/css/vertical-responsive-menu.min.css' %}"
+      rel="stylesheet"
+    />
+    <link href="{% static 'circus/css/style.css' %}" rel="stylesheet" />
+    <link href="{% static 'circus/css/responsive.css' %}" rel="stylesheet" />
+    <link href="{% static 'circus/css/night-mode.css' %}" rel="stylesheet" />
+
+    <link
+      href="{% static 'circus/vendor/fontawesome-free/css/all.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'circus/vendor/OwlCarousel/assets/owl.carousel.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'circus/vendor/OwlCarousel/assets/owl.theme.default.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'circus/vendor/bootstrap/css/bootstrap.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'circus/vendor/semantic/semantic.min.css' %}"
+    />
+  </head>
+  <body>
+    {% include 'circus/base_two/course_content.html' %}
+     {% include 'circus/base_one/header.html' %}
+     {% include 'circus/base_two/left_side_bar.html' %} {% block content %}
+     {% endblock content %} {% include 'circus/base_two/footer.html' %}
+    <script src="{% static 'circus/js/vertical-responsive-menu.min.js' %}"></script>
+    <script src="{% static 'circus/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'circus/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'circus/vendor/OwlCarousel/owl.carousel.js' %}"></script>
+    <script src="{% static 'circus/vendor/semantic/semantic.min.js' %}"></script>
+    <script src="{% static 'circus/js/custom.js' %}"></script>
+    <script src="{% static 'circus/js/custom1.js' %}"></script>
+    <script src="{% static 'circus/js/night-mode.js' %}"></script>
+    <script src="{% static 'circus/js/jquery-steps.min.js' %}"></script>
+    <script src="{% static 'circus/vendor/charts/Chart.min.js' %}"></script>
+    <script src="{% static 'circus/js/chart.js' %}"></script>
+    <script>
+      $("#add-course-tab").steps({
+        onFinish: function () {
+          alert("Wizard Completed");
+        },
+      });
+    </script>
+    <script>
+      $(function () {
+        $(".sortable").sortable();
+        $(".sortable").disableSelection();
+      });
+    </script>
+  </body>
+</html>

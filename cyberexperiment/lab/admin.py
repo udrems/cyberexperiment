@@ -1,7 +1,8 @@
 from django.contrib import admin
 
-from .models import LabMembership, LabSubscription, UserMembership
+from .models import Category
 
-admin.site.register(LabMembership)
-admin.site.register(UserMembership)
-admin.site.register(LabSubscription)
+
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ["title", "author"]

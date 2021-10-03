@@ -6,7 +6,8 @@ from django.views import defaults as default_views
 from django.views.generic import TemplateView
 
 urlpatterns = [
-    path("", include("cyberexperiment.core.urls"), name="core"),
+    path("", include("cyberexperiment.core.urls", namespace="core")),
+    path("lab/", include("cyberexperiment.lab.urls", namespace="lab")),
     path(
         "about/", TemplateView.as_view(template_name="pages/about.html"), name="about"
     ),

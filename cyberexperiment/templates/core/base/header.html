@@ -39,29 +39,29 @@
                       class="
                         rs-mega-menu
                         mega-rs
-                        menu-item-has-children
+                        menu-item
                         current-menu-item
                       "
                     >
                       <a href="{% url 'core:home' %}">Home</a>
                       <!-- //.mega-menu -->
                     </li>
-                    <li class="menu-item-has-children">
+                    <li class="menu-item">
                       <a href="{% url 'core:about' %}">About</a>
                     </li>
 
-                    <li class="menu-item-has-children">
+                    <li class="menu-item">
                       <a href="{% url 'core:instructor' %}">Instructor</a>
                     </li>
-                    <li class="menu-item-has-children">
-                      <a href="{% url 'core:follower' %}">Student</a>
+                    <li class="menu-item">
+                      <a href="{% url 'core:follower' %}">Follower</a>
                     </li>
 
-                    <li class="menu-item-has-children">
+                    <li class="menu-item">
                       <a href="{% url 'core:blog' %}">Blog</a>
                     </li>
 
-                    <li class="menu-item-has-children">
+                    <li class="menu-item">
                       <a href="{% url 'core:contact' %}">Contact</a>
                     </li>
                   </ul>
@@ -85,7 +85,7 @@
                   </a>
                 </li>
                 <li class="user-icon last-icon">
-                  <a href="{% url 'core:login' %}"
+                  <a href="{% url 'account_login' %}"
                     ><i class="fa fa-user" aria-hidden="true"></i
                   ></a>
                 </li>

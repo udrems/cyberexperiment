@@ -1,149 +1,91 @@
 {% extends "./base/base.html"%} {% load i18n %} {% load static %}
 {% block title %}Home | cyber Experiment{% endblock%} {% block content %}
-<!-- Slider Section Start -->
-<div class="rs-slider main-home">
-  <div
-    class="rs-carousel owl-carousel"
-    data-loop="true"
-    data-items="1"
-    data-margin="0"
-    data-autoplay="true"
-    data-hoverpause="true"
-    data-autoplay-timeout="5000"
-    data-smart-speed="800"
-    data-dots="false"
-    data-nav="false"
-    data-nav-speed="false"
-    data-center-mode="false"
-    data-mobile-device="1"
-    data-mobile-device-nav="false"
-    data-mobile-device-dots="false"
-    data-ipad-device="1"
-    data-ipad-device-nav="false"
-    data-ipad-device-dots="false"
-    data-ipad-device2="1"
-    data-ipad-device-nav2="false"
-    data-ipad-device-dots2="false"
-    data-md-device="1"
-    data-md-device-nav="true"
-    data-md-device-dots="false"
-  >
-    <div class="slider-content slide1">
-      <div class="container">
-        <div class="content-part">
-          <div
-            class="sl-sub-title wow bounceInLeft"
-            data-wow-delay="300ms"
-            data-wow-duration="2000ms"
-          >
-            Start A Cyber Experiment
-          </div>
-          <h1
-            class="sl-title wow fadeInRight"
-            data-wow-delay="600ms"
-            data-wow-duration="2000ms"
-          >
-            Start A Cyber Experiment
-          </h1>
-          <div
-            class="sl-btn wow fadeInUp"
-            data-wow-delay="900ms"
-            data-wow-duration="2000ms"
-          >
-            <a class="readon orange-btn main-home" href="#">Find Experiments</a>
+<!-- Banner Section Start -->
+<div id="rs-banner" class="rs-banner style13">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 md-mb-50">
+        <div class="banner-content">
+          <span class="sub-text">Build Your Future </span>
+          <h2 class="title">Choose 2500+ Online Labs With New Additions</h2>
+          <p class="desc">Take your learning organisation to the next level.</p>
+          <div class="search-widget pr-100 md-pr-15">
+            <div class="search-wrap">
+              <input
+                type="search"
+                placeholder="Search here what do you  went to learn?"
+                name="s"
+                class="search-input"
+                value=""
+              />
+              <button type="submit" value="Search">
+                <i class="flaticon-search"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="slider-content slide2">
-      <div class="container">
-        <div class="content-part">
-          <div
-            class="sl-sub-title wow bounceInLeft"
-            data-wow-delay="300ms"
-            data-wow-duration="2000ms"
-          >
-            Start to learning today
-          </div>
-          <h1
-            class="sl-title wow fadeInRight"
-            data-wow-delay="600ms"
-            data-wow-duration="2000ms"
-          >
-            Explore Interests and Career With Cyber Experiment
-          </h1>
-          <div
-            class="sl-btn wow fadeInUp"
-            data-wow-delay="900ms"
-            data-wow-duration="2000ms"
-          >
-            <a class="readon orange-btn main-home" href="#"
-              >Find New Experiment</a
-            >
-          </div>
+      <div class="col-lg-6 text-right">
+        <div class="banner-img">
+          <img
+            src="{% static 'core/assets/images/banner/home15/1.png' %}"
+            alt="Image"
+          />
         </div>
       </div>
     </div>
   </div>
-
-  <!-- Features Section start -->
-  <div id="rs-features" class="rs-features main-home">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-12 md-mb-30">
-          <div class="features-wrap">
-            <div class="icon-part">
-              <img
-                src="{% static 'core/assets/images/features/icon/3.png' %}"
-                alt=""
-              />
-            </div>
-            <div class="content-part">
-              <h4 class="title">
-                <span class="watermark">5,320 online Lab</span>
-              </h4>
-              <p class="dese">Enjoy a variety of fresh topics</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12 md-mb-30">
-          <div class="features-wrap">
-            <div class="icon-part">
-              <img
-                src="{% static 'core/assets/images/features/icon/2.png' %}"
-                alt=""
-              />
-            </div>
-            <div class="content-part">
-              <h4 class="title">
-                <span class="watermark">Expert instruction</span>
-              </h4>
-              <p class="dese">Find the right instructor</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12">
-          <div class="features-wrap">
-            <div class="icon-part">
-              <img
-                src="{% static 'core/assets/images/features/icon/1.png' %}"
-                alt=""
-              />
-            </div>
-            <div class="content-part">
-              <h4 class="title">
-                <span class="watermark">Lifetime access</span>
-              </h4>
-              <p class="dese">Learn on your schedule</p>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="rs-animation-part">
+    <div class="animate-style one">
+      <img
+        class="rotated-style"
+        src="{% static 'core/assets/images/banner/home15/icon-1.png' %}"
+        alt="Banner"
+      />
+    </div>
+    <div class="animate-style two">
+      <img
+        class="rotated-style"
+        src="{% static 'core/assets/images/banner/home15/icon-2.png' %}"
+        alt="Banner"
+      />
+    </div>
+    <div class="animate-style three">
+      <img
+        class="rotated-style"
+        src="{% static 'core/assets/images/banner/home15/icon-3.png' %}"
+        alt="Banner"
+      />
+    </div>
+    <div class="animate-style three">
+      <img
+        src="{% static 'core/assets/images/banner/home15/icon-3.png' %}"
+        alt="Banner"
+      />
+    </div>
+    <div class="animate-style four">
+      <img
+        class="veritcal-two"
+        src="{% static 'core/assets/images/banner/home15/online-learn.png' %}"
+        alt="Banner"
+      />
+    </div>
+    <div class="animate-style five">
+      <img
+        class="rotated-style"
+        src="{% static 'core/assets/images/banner/home15/icon-2.png' %}"
+        alt="Banner"
+      />
+    </div>
+    <div class="animate-style six">
+      <img
+        src="{% static 'core/assets/images/banner/home15/2.png' %}"
+        alt="Banner"
+      />
     </div>
   </div>
-  <!-- Features Section End -->
 </div>
-<!-- Slider Section End -->
+<!-- Banner Section End -->
 
 <!-- Categories Section Start -->
 <div
@@ -246,9 +188,7 @@
         <div class="categories-items">
           <div class="cate-images">
             <a href="#"
-              ><img
-                src="{% static 'core/assets/images/cyber4.jpeg' %}"
-                alt=""
+              ><img src="{% static 'core/assets/images/cyber4.jpeg' %}" alt=""
             /></a>
           </div>
           <div class="contents">
@@ -296,283 +236,7 @@
 </div>
 <!-- Categories Section End -->
 
-<!-- Categories Section Start -->
-<div
-  id="rs-popular-courses"
-  class="rs-popular-courses main-home event-bg pt-100 pb-100 md-pt-70 md-pb-70"
->
-  <div class="container">
-    <div class="sec-title3 text-center mb-45">
-      <div class="sub-title">Select Lab</div>
-      <h2 class="title black-color">Explore Popular Lab</h2>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 mb-30">
-        <div class="courses-item">
-          <div class="courses-grid">
-            <div class="img-part">
-              <a href="#"
-                ><img
-                  src="{% static 'core/assets/images/courses/main-home/1.jpg' %}"
-                  alt=""
-              /></a>
-            </div>
-            <div class="content-part">
-              <div class="info-meta">
-                <ul>
-                  <li class="ratings">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    (1 rating)
-                  </li>
-                </ul>
-              </div>
-              <div class="course-price">
-                <span class="price">Free</span>
-              </div>
-              <h3 class="title">
-                <a href="#">My Pinterest Private Experiment</a>
-              </h3>
-              <ul class="meta-part">
-                <li class="user">
-                  <i class="fa fa-user"></i>
-                  25 Students
-                </li>
-                <li class="user">
-                  <i class="fa fa-file"></i>
-                  6 Lessons
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-30">
-        <div class="courses-item">
-          <div class="courses-grid">
-            <div class="img-part">
-              <a href="#"
-                ><img
-                  src="{% static 'core/assets/images/courses/main-home/2.jpg' %}"
-                  alt=""
-              /></a>
-            </div>
-            <div class="content-part">
-              <div class="info-meta">
-                <ul>
-                  <li class="ratings">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    (1 rating)
-                  </li>
-                </ul>
-              </div>
-              <div class="course-price">
-                <span class="price">Premium</span>
-              </div>
-              <h3 class="title">
-                <a href="#"
-                  >Artificial Intelligence Fundamental Startup Justo</a
-                >
-              </h3>
-              <ul class="meta-part">
-                <li class="user">
-                  <i class="fa fa-user"></i>
-                  25 Students
-                </li>
-                <li class="user">
-                  <i class="fa fa-file"></i>
-                  6 Lessons
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-30">
-        <div class="courses-item">
-          <div class="courses-grid">
-            <div class="img-part">
-              <a href="#"
-                ><img
-                  src="{% static 'core/assets/images/courses/home8/2.jpg' %}"
-                  alt=""
-              /></a>
-            </div>
-            <div class="content-part">
-              <div class="info-meta">
-                <ul>
-                  <li class="ratings">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    (1 rating)
-                  </li>
-                </ul>
-              </div>
-              <div class="course-price">
-                <span class="price">Premium</span>
-              </div>
-              <h3 class="title">
-                <a href="#"
-                  >Spend $10 on Facebook Ads to Generate 100 Sales on Shopify</a
-                >
-              </h3>
-              <ul class="meta-part">
-                <li class="user">
-                  <i class="fa fa-user"></i>
-                  25 Students
-                </li>
-                <li class="user">
-                  <i class="fa fa-file"></i>
-                  6 Lessons
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 md-mb-30">
-        <div class="courses-item">
-          <div class="courses-grid">
-            <div class="img-part">
-              <a href="#"
-                ><img
-                  src="{% static 'core/assets/images/courses/home8/4.jpg' %}"
-                  alt=""
-              /></a>
-            </div>
-            <div class="content-part">
-              <div class="info-meta">
-                <ul>
-                  <li class="ratings">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    (1 rating)
-                  </li>
-                </ul>
-              </div>
-              <div class="course-price">
-                <span class="price">Premium</span>
-              </div>
-              <h3 class="title">
-                <a href="#">Hacking Windows 11 Open Experiment</a>
-              </h3>
-              <ul class="meta-part">
-                <li class="user">
-                  <i class="fa fa-user"></i>
-                  25 Students
-                </li>
-                <li class="user">
-                  <i class="fa fa-file"></i>
-                  6 Lessons
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 sm-mb-30">
-        <div class="courses-item">
-          <div class="courses-grid">
-            <div class="img-part">
-              <a href="#"
-                ><img
-                  src="{% static 'core/assets/images/courses/home8/5.jpg' %}"
-                  alt=""
-              /></a>
-            </div>
-            <div class="content-part">
-              <div class="info-meta">
-                <ul>
-                  <li class="ratings">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    (1 rating)
-                  </li>
-                </ul>
-              </div>
-              <div class="course-price">
-                <span class="price">Free</span>
-              </div>
-              <h3 class="title">
-                <a href="#">Lawyer Advance Mental Simulator Handle Nulla</a>
-              </h3>
-              <ul class="meta-part">
-                <li class="user">
-                  <i class="fa fa-user"></i>
-                  25 Students
-                </li>
-                <li class="user">
-                  <i class="fa fa-file"></i>
-                  6 Lessons
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="courses-item">
-          <div class="courses-grid">
-            <div class="img-part">
-              <a href="#"
-                ><img
-                  src="{% static 'core/assets/images/courses/home8/6.jpg' %}"
-                  alt=""
-              /></a>
-            </div>
-            <div class="content-part">
-              <div class="info-meta">
-                <ul>
-                  <li class="ratings">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    (1 rating)
-                  </li>
-                </ul>
-              </div>
-              <div class="course-price">
-                <span class="price">Free</span>
-              </div>
-              <h3 class="title">
-                <a href="#">Computer Fundamentals Basic Startup Ultricies</a>
-              </h3>
-              <ul class="meta-part">
-                <li class="user">
-                  <i class="fa fa-user"></i>
-                  25 Students
-                </li>
-                <li class="user">
-                  <i class="fa fa-file"></i>
-                  6 Lessons
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Categories Section End -->
+{% include './course.html'%}
 
 <!-- CTA Section Start -->
 <div class="rs-cta main-home">

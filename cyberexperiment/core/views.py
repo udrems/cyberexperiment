@@ -33,9 +33,5 @@ class InstructorView(TemplateView):
     template_name = "core/instructor.html"
 
 
-class LoginView(TemplateView):
-    template_name = "core/login.html"
-
-
-class RegisterView(TemplateView):
-    template_name = "core/register.html"
+class Dashboard(TemplateView):
+    template_name = "circus/index.html"

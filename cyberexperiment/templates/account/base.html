@@ -1,10 +1,82 @@
-{% extends "base.html" %}
-{% block title %}{% block head_title %}{% endblock head_title %}{% endblock title %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, shrink-to-fit=9" />
+    <meta name="description" content="Gambolthemes" />
+    <meta name="author" content="Gambolthemes" />
+    <title>{% block title %} {% endblock title %}</title>
 
-{% block content %}
-<div class="row">
-  <div class="col-md-6 offset-md-3">
-    {% block inner %}{% endblock %}
-  </div>
-</div>
-{% endblock %}
+    <link rel="icon" type="image/png" href="images/fav.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700,500"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'circus/vendor/unicons-2.0.1/css/unicons.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'circus/css/vertical-responsive-menu.min.css' %}"
+      rel="stylesheet"
+    />
+    <link href="{% static 'circus/css/style.css' %}" rel="stylesheet" />
+    <link href="{% static 'circus/css/responsive.css' %}" rel="stylesheet" />
+    <link href="{% static 'circus/css/night-mode.css' %}" rel="stylesheet" />
+
+    <link
+      href="{% static 'circus/vendor/fontawesome-free/css/all.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'circus/vendor/OwlCarousel/assets/owl.carousel.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'circus/vendor/OwlCarousel/assets/owl.theme.default.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'circus/vendor/bootstrap/css/bootstrap.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'circus/vendor/semantic/semantic.min.css' %}"
+    />
+  </head>
+  <body>
+    <div class="sign_in_up_bg">
+      <div class="container">
+        <div class="row justify-content-lg-center justify-content-md-center">
+          <div class="col-lg-12">
+            <div class="main_logo25" id="logo">
+              <a href="index.html"
+                ><img src="{% static 'core/trans.png' %}" alt="" width="200"
+              /></a>
+              <a href="index.html"
+                ><img
+                  class="logo-inverse"
+                  src="{% static 'core/trans.png' %}"
+                  alt=""
+                  width="200"
+              /></a>
+            </div>
+          </div>
+          {% block content %} {% endblock content %}
+        </div>
+      </div>
+    </div>
+
+    <script src="{% static 'circus/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'circus/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'circus/vendor/OwlCarousel/owl.carousel.js' %}"></script>
+    <script src="{% static 'circus/vendor/semantic/semantic.min.js' %}"></script>
+    <script src="{% static 'circus/js/custom.js' %}"></script>
+    <script src="{% static 'circus/js/night-mode.js' %}"></script>
+  </body>
+</html>

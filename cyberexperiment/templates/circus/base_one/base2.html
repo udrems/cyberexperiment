@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, shrink-to-fit=9" />
+    <meta name="description" content="Gambolthemes" />
+    <meta name="author" content="Gambolthemes" />
+    <title>{% block title %} {% endblock title %}</title>
+
+    <link
+      rel="icon"
+      type="{% static 'circus/image/png' %}"
+      href="{% static 'circus/images/fav.png' %}"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700,500"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'circus/vendor/unicons-2.0.1/css/unicons.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'circus/css/vertical-responsive-menu.min.css' %}"
+      rel="stylesheet"
+    />
+    <link href="{% static 'circus/css/style.css' %}" rel="stylesheet" />
+    <link href="{% static 'circus/css/responsive.css' %}" rel="stylesheet" />
+    <link href="{% static 'circus/css/night-mode.css' %}" rel="stylesheet" />
+
+    <link
+      href="{% static 'circus/vendor/fontawesome-free/css/all.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'circus/vendor/OwlCarousel/assets/owl.carousel.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'circus/vendor/OwlCarousel/assets/owl.theme.default.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'circus/vendor/bootstrap/css/bootstrap.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'circus/vendor/semantic/semantic.min.css' %}"
+    />
+  </head>
+  <body>
+    {% include 'circus/base_one/header.html' %}
+    {% include 'circus/base_one/sidebar.html' %}
+    <div class="wrapper _bg4586">
+
+      {% block content %}
+      {% endblock content %}
+      {% include 'circus/base_one/footer.html' %}
+    </div>
+
+
+
+    <script src="{% static 'circus/js/vertical-responsive-menu.min.js' %}"></script>
+    <script src="{% static 'circus/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'circus/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'circus/vendor/OwlCarousel/owl.carousel.js' %}"></script>
+    <script src="{% static 'circus/vendor/semantic/semantic.min.js' %}"></script>
+    <script src="{% static 'circus/js/custom.js' %}"></script>
+    <script src="{% static 'circus/js/night-mode.js' %}"></script>
+  </body>
+</html>

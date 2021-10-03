@@ -80,11 +80,16 @@ THIRD_PARTY_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
+    "phonenumber_field",
+    "django_countries",
+    # 'allauth.socialaccount.providers.google',
+    # 'allauth.socialaccount.providers.facebook',
 ]
 
 LOCAL_APPS = [
     "cyberexperiment.users.apps.UsersConfig",
     "cyberexperiment.core.apps.CoreConfig",
+    "cyberexperiment.lab.apps.LabConfig",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -193,6 +198,7 @@ TEMPLATES = [
                 "django.template.context_processors.tz",
                 "django.contrib.messages.context_processors.messages",
                 "cyberexperiment.utils.context_processors.settings_context",
+                "cyberexperiment.utils.context_processors.category",
             ],
         },
     }
@@ -273,6 +279,9 @@ ACCOUNT_AUTHENTICATION_METHOD = "username"
 ACCOUNT_EMAIL_REQUIRED = True
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 ACCOUNT_EMAIL_VERIFICATION = "mandatory"
+ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 7
+ACCOUNT_LOGIN_ATTEMPTS_LIMIT = 5
+ACCOUNT_LOGIN_ATTEMPTS_TIMEOUT = 86400  # 1 day in seconds
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 ACCOUNT_ADAPTER = "cyberexperiment.users.adapters.AccountAdapter"
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
@@ -281,3 +290,5 @@ SOCIALACCOUNT_ADAPTER = "cyberexperiment.users.adapters.SocialAccountAdapter"
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+ACCOUNT_LOGOUT_REDIRECT_URL = "/accounts/login/"
+# LOGIN_REDIRECT_URL = '/accounts/email/'
