@@ -198,6 +198,7 @@ TEMPLATES = [
                 "django.template.context_processors.tz",
                 "django.contrib.messages.context_processors.messages",
                 "cyberexperiment.utils.context_processors.settings_context",
+                "cyberexperiment.utils.context_processors.category",
             ],
         },
     }

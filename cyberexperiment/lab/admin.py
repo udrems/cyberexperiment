@@ -1,6 +1,8 @@
-# from django.contrib import admin
+from django.contrib import admin
 
-# from .models import LabSubscription
+from .models import Category
 
 
-# admin.site.register(LabSubscription)
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ["title", "author"]

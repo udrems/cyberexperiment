@@ -27,12 +27,9 @@ class General(models.Model):
         abstract = True
 
 
-class Category(TimeStamp):
-    name = models.CharField(max_length=200)
-    slug = models.SlugField(max_length=100)
-
+class Category(TimeStamp, General):
     def __str__(self):
-        return self.name
+        return self.title
 
 
 # class LabSubscription(TimeStamp):

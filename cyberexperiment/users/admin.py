@@ -73,8 +73,8 @@ class UserAdmin(auth_admin.UserAdmin):
     inlines = (
         ProfileInline,
         NotificationSettingInline,
-        # PrivacyInline,
-        # AddressInline,
+        PrivacyInline,
+        AddressInline,
     )
 
     form = UserChangeForm

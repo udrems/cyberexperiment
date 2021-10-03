@@ -121,7 +121,7 @@ class Privacy(TimeStamp):
     show_course_you_are_taking = models.BooleanField(default=False)
 
     def __str__(self):
-        self.user.username
+        return self.user.username
 
     class Meta:
         verbose_name_plural = "Privacy"
