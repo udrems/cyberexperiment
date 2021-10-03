@@ -46,3 +46,15 @@ class Event(TimeStamp, General):
 
     def get_absolute_url(self, *args, **kwargs):
         return redirect("core:detail", kwargs={"slug": self.slug})
+
+
+# class Message(TimeStamp):
+#     sender = models.ManyToManyField(settings.)
+
+
+class Notification(TimeStamp):
+    receiver = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    message = models.TextField(blank=True)
+
+    def __str__(self):
+        self.receiver.username

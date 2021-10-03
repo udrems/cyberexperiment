@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.db import models
 
-# from cyberexperiment.users.models import UserMembership
+from cyberexperiment.users.models import UserMembership
 
 
 class TimeStamp(models.Model):
@@ -68,6 +68,11 @@ class LabCourse(TimeStamp, General):
 class Lesson(TimeStamp, General):
     """lessons will be linked to a lab course that will enable the users to create multiple lessons"""
 
+    free = models.BooleanField(default=False)
+    video = models.URLField(blank=True)
+    video_thumbnail = models.ImageField(blank=True, upload_to="lesson/")
+    attachments = models.FileField(blank=True, upload_to="lesson/")
+
     def __str__(self):
         return self.title
 
@@ -77,3 +82,34 @@ class Lesson(TimeStamp, General):
 
 class MultiImage(TimeStamp):
     """This will enable creating multiple images on the model"""
+
+
+class Content(TimeStamp, General):
+    LEVEL = {
+        ("beginner", "beginner"),
+        ("intermediate", "intermediate"),
+        ("professionals", "professionals"),
+    }
+    LANGUAGE = {("en", "English"), ("fr", "French")}
+    short_description = models.TextField(blank=True)
+    content_description = models.TextField(blank=True)
+    what_student_will_learned = models.TextField(
+        blank=True, help_text="What will students learn in your course?"
+    )
+    requirements = models.TextField(blank=True, help_text="requirements")
+    content_level = models.CharField(choices=LEVEL, max_length=255, default="beginner")
+    audio_language = models.CharField(choices=LANGUAGE, max_length=200, default="en")
+    caption_language = models.CharField(choices=LANGUAGE, max_length=200, default="en")
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.title
+
+
+class Topic(TimeStamp, General):
+    lesson = models.ForeignKey(Lesson, on_delete=models.CASCADE)
+    image = models.ImageField(blank=True, upload_to="topic/")
+    membership_type = models.ForeignKey(UserMembership, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.title
