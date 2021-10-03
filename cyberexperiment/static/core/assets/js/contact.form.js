@@ -2,9 +2,9 @@
 *
 * -----------------------------------------------------------------------------
 *
-* Template : Educavo - Education HTML Template
-* Author : rs-theme
-* Author URI : http://www.rstheme.com/
+*
+* Author : Chidozie Okafor
+*
 *
 * -----------------------------------------------------------------------------
 *
