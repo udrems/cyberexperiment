@@ -105,7 +105,7 @@
               </div>
             </div>
           </a>
-          <a class="vbm_btn" href="instructor_messages.html"
+          <a class="vbm_btn" href="{% url 'lab:message' %}"
             >View All <i class="uil uil-arrow-right"></i
           ></a>
         </div>
@@ -159,7 +159,7 @@
               </div>
             </div>
           </a>
-          <a class="vbm_btn" href="instructor_notifications.html"
+          <a class="vbm_btn" href="{% url 'lab:notification' %}"
             >View All <i class="uil uil-arrow-right"></i
           ></a>
         </div>
@@ -211,8 +211,8 @@
           >
           <a href="setting.html" class="item channel_item">Setting</a>
           <a href="help.html" class="item channel_item">Help</a>
-          <a href="feedback.html" class="item channel_item">Send Feedback</a>
-          <a href="sign_in.html" class="item channel_item">Sign Out</a>
+          <a href="{% url 'lab:feedback' %}" class="item channel_item">Send Feedback</a>
+          <a href="{% url 'account_logout' %}" class="item channel_item">Sign Out</a>
         </div>
       </li>
     </ul>
