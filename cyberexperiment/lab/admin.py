@@ -1,7 +1,6 @@
-from django.contrib import admin
+# from django.contrib import admin
 
-from .models import LabMembership, LabSubscription, UserMembership
+# from .models import LabSubscription
 
-admin.site.register(LabMembership)
-admin.site.register(UserMembership)
-admin.site.register(LabSubscription)
+
+# admin.site.register(LabSubscription)

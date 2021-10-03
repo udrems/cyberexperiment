@@ -80,6 +80,8 @@ THIRD_PARTY_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
+    "phonenumber_field",
+    "django_countries",
     # 'allauth.socialaccount.providers.google',
     # 'allauth.socialaccount.providers.facebook',
 ]
@@ -87,6 +89,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     "cyberexperiment.users.apps.UsersConfig",
     "cyberexperiment.core.apps.CoreConfig",
+    "cyberexperiment.lab.apps.LabConfig",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
