@@ -209,7 +209,7 @@
           <a href="membership.html" class="item channel_item"
             >Paid Memberships</a
           >
-          <a href="setting.html" class="item channel_item">Setting</a>
+          <a href="{% url 'users:setting' %}" class="item channel_item">Setting</a>
           <a href="help.html" class="item channel_item">Help</a>
           <a href="{% url 'lab:feedback' %}" class="item channel_item">Send Feedback</a>
           <a href="{% url 'account_logout' %}" class="item channel_item">Sign Out</a>

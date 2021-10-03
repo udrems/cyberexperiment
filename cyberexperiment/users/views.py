@@ -51,3 +51,7 @@ class Profile(TemplateView):
 
 class CreatorDashboard(TemplateView):
     template_name = "circus/creator_dashboard.html"
+
+
+class Setting(TemplateView):
+    template_name = "circus/setting.html"

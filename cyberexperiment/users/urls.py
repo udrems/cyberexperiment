@@ -3,6 +3,7 @@ from django.urls import path
 from cyberexperiment.users.views import (
     CreatorDashboard,
     Profile,
+    Setting,
     user_redirect_view,
     user_update_view,
 )
@@ -14,4 +15,5 @@ urlpatterns = [
     path("profile/", Profile.as_view(), name="profile"),
     # path("<str:username>/", view=user_detail_view, name="detail"),
     path("creator_dashboard/", CreatorDashboard.as_view(), name="creator_dashboard"),
+    path("setting/", Setting.as_view(), name="setting"),
 ]
