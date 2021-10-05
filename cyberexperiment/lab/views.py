@@ -28,3 +28,11 @@ class Review(generic.TemplateView):
 
 class FeedBack(generic.TemplateView):
     template_name = "circus/feedback.html"
+
+
+class CourseDetail(generic.TemplateView):
+    template_name = "circus/course_detail_view.html"
+
+
+class LiveVideo(generic.TemplateView):
+    template_name = "circus/live_output.html"

@@ -2,8 +2,10 @@ from django.urls import path
 
 from .views import (
     Analytic,
+    CourseDetail,
     CreateCourse,
     FeedBack,
+    LiveVideo,
     Message,
     MyContent,
     Notification,
@@ -19,4 +21,6 @@ urlpatterns = [
     path("message/", Message.as_view(), name="message"),
     path("notification/", Notification.as_view(), name="notification"),
     path("feedback/", FeedBack.as_view(), name="feedback"),
+    path("experiment/", CourseDetail.as_view(), name="course_detail"),
+    path("watch_experiment/", LiveVideo.as_view(), name="watch_experiment"),
 ]
