@@ -1,6 +1,5 @@
-﻿base new
-
-<div class="wrapper _bg4586 _new89">
+﻿{% extends 'circus/base_three/base.html' %} {% load static %} {% block title %}
+Checkout Membership {% endblock title %} {% block content %}
   <div class="_215b15">
     <div class="container">
       <div class="row">
@@ -11,10 +10,10 @@
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="index.html">Home</a>
+                      <a href="{% url 'core:dashboard' %}">Home</a>
                     </li>
                     <li class="breadcrumb-item">
-                      <a href="membership.html">Paid Membership</a>
+                      <a href="{% url 'lab:membership' %}">Paid Membership</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
                       Checkout
@@ -38,7 +37,7 @@
           <div class="membership_chk_bg">
             <div class="checkout_title">
               <h4>Billing Details</h4>
-              <img src="images/line.svg" alt="" />
+              <img src="{% static 'circus/images/line.svg' %}" alt="" />
             </div>
             <div
               class="panel-group"
@@ -1002,7 +1001,7 @@
           <div class="membership_chk_bg">
             <div class="checkout_title">
               <h4>Select Payment Method</h4>
-              <img src="images/line.svg" alt="" />
+              <img src="{% static 'circus/images/line.svg' %}" alt="" />
             </div>
             <div class="checkout-tabs">
               <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -1225,35 +1224,35 @@
                             <img
                               alt="Visa"
                               title="Visa"
-                              src="images/membership/pyicon-1.svg"
+                              src="{% static 'circus/images/membership/pyicon-1.svg' %}"
                             />
                           </li>
                           <li class="financial-institutes__logo">
                             <img
                               alt="MasterCard"
                               title="MasterCard"
-                              src="images/membership/pyicon-2.svg"
+                              src="{% static 'circus/images/membership/pyicon-2.svg' %}"
                             />
                           </li>
                           <li class="financial-institutes__logo">
                             <img
                               alt="American Express"
                               title="American Express"
-                              src="images/membership/pyicon-3.svg"
+                              src="{% static 'circus/images/membership/pyicon-3.svg' %}"
                             />
                           </li>
                           <li class="financial-institutes__logo">
                             <img
                               alt="Discover"
                               title="Discover"
-                              src="images/membership/pyicon-4.svg"
+                              src="{% static 'circus/images/membership/pyicon-4.svg' %}"
                             />
                           </li>
                           <li class="financial-institutes__logo">
                             <img
                               alt="China UnionPay"
                               title="China UnionPay"
-                              src="images/membership/pyicon-5.svg"
+                              src="{% static 'circus/images/membership/pyicon-5.svg' %}"
                             />
                           </li>
                         </ul>
@@ -1266,7 +1265,7 @@
             <div class="chckout_order_dt">
               <div class="checkout_title">
                 <h4>Order Details</h4>
-                <img src="images/line.svg" alt="" />
+                <img src="{% static 'circus/images/line.svg' %}" alt="" />
               </div>
               <div class="order_dt_section">
                 <div class="order_title">
@@ -1292,7 +1291,7 @@
           <div class="membership_chk_bg rght1528">
             <div class="checkout_title">
               <h4>Order Summary</h4>
-              <img src="images/line.svg" alt="" />
+              <img src="{% static 'circus/images/line.svg' %}" alt="" />
             </div>
             <div class="order_dt_section">
               <div class="order_title">
@@ -1316,4 +1315,4 @@
       </div>
     </div>
   </div>
-</div>
+{% endblock %}

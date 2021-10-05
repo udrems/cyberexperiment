@@ -1,5 +1,6 @@
-﻿base2
-<div class="wrapper">
+﻿{% extends 'circus/base_one/base.html' %} {% load static %} {% block title %}
+Cyber Experiment | Details {% endblock title %} {% block content %}
+
   <div class="sa4d25">
     <div class="container-fluid">
       <div class="row">
@@ -25,13 +26,13 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="fcrse_1 mt-30">
                   <div class="tutor_img">
-                    <a href="instructor_profile_view.html"
-                      ><img src="images/left-imgs/img-1.jpg" alt=""
+                    <a href="{% url 'users:profile' %}"
+                      ><img src="{% static 'circus/images/left-imgs/img-1.jpg' %}" alt=""
                     /></a>
                   </div>
                   <div class="tutor_content_dt">
                     <div class="tutor150">
-                      <a href="instructor_profile_view.html" class="tutor_name"
+                      <a href="{% url 'users:profile' %}" class="tutor_name"
                         >John Doe</a
                       >
                       <div class="mef78" title="Verify">
@@ -62,8 +63,8 @@
                       </li>
                     </ul>
                     <div class="tut1250">
-                      <span class="vdt15">100K Students</span>
-                      <span class="vdt15">15 Courses</span>
+                      <span class="vdt15">100K followers</span>
+                      <span class="vdt15">15 Experiments</span>
                     </div>
                   </div>
                 </div>
@@ -71,13 +72,13 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="fcrse_1 mt-30">
                   <div class="tutor_img">
-                    <a href="instructor_profile_view.html"
-                      ><img src="images/left-imgs/img-2.jpg" alt=""
+                    <a href="{% url 'users:profile' %}"
+                      ><img src="{% static 'circus/images/left-imgs/img-2.jpg' %}" alt=""
                     /></a>
                   </div>
                   <div class="tutor_content_dt">
                     <div class="tutor150">
-                      <a href="instructor_profile_view.html" class="tutor_name"
+                      <a href="{% url 'users:profile' %}" class="tutor_name"
                         >Kerstin Cable</a
                       >
                       <div class="mef78" title="Verify">
@@ -110,8 +111,8 @@
                       </li>
                     </ul>
                     <div class="tut1250">
-                      <span class="vdt15">14K Students</span>
-                      <span class="vdt15">11 Courses</span>
+                      <span class="vdt15">14K followers</span>
+                      <span class="vdt15">11 Experiment</span>
                     </div>
                   </div>
                 </div>
@@ -119,13 +120,13 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="fcrse_1 mt-30">
                   <div class="tutor_img">
-                    <a href="instructor_profile_view.html"
-                      ><img src="images/left-imgs/img-3.jpg" alt=""
+                    <a href="{% url 'users:profile' %}"
+                      ><img src="{% static 'circus/images/left-imgs/img-3.jpg' %}" alt=""
                     /></a>
                   </div>
                   <div class="tutor_content_dt">
                     <div class="tutor150">
-                      <a href="instructor_profile_view.html" class="tutor_name"
+                      <a href="{% url 'users:profile' %}" class="tutor_name"
                         >Jose Portilla</a
                       >
                       <div class="mef78" title="Verify">
@@ -158,8 +159,8 @@
                       </li>
                     </ul>
                     <div class="tut1250">
-                      <span class="vdt15">1M Students</span>
-                      <span class="vdt15">25 Courses</span>
+                      <span class="vdt15">1M followers</span>
+                      <span class="vdt15">25 Experiments</span>
                     </div>
                   </div>
                 </div>
@@ -167,8 +168,8 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="fcrse_1 mt-30">
                   <div class="tutor_img">
-                    <a href="instructor_profile_view.html"
-                      ><img src="images/left-imgs/img-3.jpg" alt=""
+                    <a href="{% url 'users:profile' %}"
+                      ><img src="{% static 'circus/images/left-imgs/img-3.jpg' %}" alt=""
                     /></a>
                   </div>
                   <div class="tutor_content_dt">
@@ -204,8 +205,8 @@
                       </li>
                     </ul>
                     <div class="tut1250">
-                      <span class="vdt15">1M Students</span>
-                      <span class="vdt15">25 Courses</span>
+                      <span class="vdt15">1M followers</span>
+                      <span class="vdt15">25 Experiment</span>
                     </div>
                   </div>
                 </div>
@@ -213,13 +214,13 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="fcrse_1 mt-30">
                   <div class="tutor_img">
-                    <a href="instructor_profile_view.html"
-                      ><img src="images/left-imgs/img-5.jpg" alt=""
+                    <a href="{% url 'users:profile' %}"
+                      ><img src="{% static 'circus/images/left-imgs/img-5.jpg' %}" alt=""
                     /></a>
                   </div>
                   <div class="tutor_content_dt">
                     <div class="tutor150">
-                      <a href="instructor_profile_view.html" class="tutor_name"
+                      <a href="{% url 'users:profile' %}" class="tutor_name"
                         >Kyle Pew</a
                       >
                       <div class="mef78" title="Verify">
@@ -227,7 +228,7 @@
                       </div>
                     </div>
                     <div class="tutor_cate">
-                      Microsoft Certified Trainer - 380,000+ Udemy Students
+                      Microsoft Certified Trainer - 380,000+ followers
                     </div>
                     <ul class="tutor_social_links">
                       <li>
@@ -252,8 +253,8 @@
                       </li>
                     </ul>
                     <div class="tut1250">
-                      <span class="vdt15">300K Students</span>
-                      <span class="vdt15">18 Courses</span>
+                      <span class="vdt15">300K followers</span>
+                      <span class="vdt15">18 Experiments</span>
                     </div>
                   </div>
                 </div>
@@ -261,13 +262,13 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="fcrse_1 mt-30">
                   <div class="tutor_img">
-                    <a href="instructor_profile_view.html"
-                      ><img src="images/left-imgs/img-7.jpg" alt=""
+                    <a href="{% url 'users:profile' %}"
+                      ><img src="{% static 'circus/images/left-imgs/img-7.jpg' %}" alt=""
                     /></a>
                   </div>
                   <div class="tutor_content_dt">
                     <div class="tutor150">
-                      <a href="instructor_profile_view.html" class="tutor_name"
+                      <a href="{% url 'users:profile' %}" class="tutor_name"
                         >Jaysen Batchelor</a
                       >
                       <div class="mef78" title="Verify">
@@ -298,8 +299,8 @@
                       </li>
                     </ul>
                     <div class="tut1250">
-                      <span class="vdt15">491K Students</span>
-                      <span class="vdt15">13 Courses</span>
+                      <span class="vdt15">491K followers</span>
+                      <span class="vdt15">13 Experiments</span>
                     </div>
                   </div>
                 </div>
@@ -307,13 +308,13 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="fcrse_1 mt-30">
                   <div class="tutor_img">
-                    <a href="instructor_profile_view.html"
-                      ><img src="images/left-imgs/img-8.jpg" alt=""
+                    <a href="{% url 'users:profile' %}"
+                      ><img src="{% static 'circus/images/left-imgs/img-8.jpg' %}" alt=""
                     /></a>
                   </div>
                   <div class="tutor_content_dt">
                     <div class="tutor150">
-                      <a href="instructor_profile_view.html" class="tutor_name"
+                      <a href="{% url 'users:profile' %}" class="tutor_name"
                         >Quinton Batchelor</a
                       >
                       <div class="mef78" title="Verify">
@@ -353,13 +354,13 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="fcrse_1 mt-30">
                   <div class="tutor_img">
-                    <a href="instructor_profile_view.html"
-                      ><img src="images/left-imgs/img-10.jpg" alt=""
+                    <a href="{% url 'users:profile' %}"
+                      ><img src="{% static 'circus/images/left-imgs/img-10.jp' %}g" alt=""
                     /></a>
                   </div>
                   <div class="tutor_content_dt">
                     <div class="tutor150">
-                      <a href="instructor_profile_view.html" class="tutor_name"
+                      <a href="{% url 'users:profile' %}" class="tutor_name"
                         >Eli Natoli</a
                       >
                       <div class="mef78" title="Verify">
@@ -401,13 +402,13 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="fcrse_1 mt-30">
                   <div class="tutor_img">
-                    <a href="instructor_profile_view.html"
-                      ><img src="images/left-imgs/img-11.jpg" alt=""
+                    <a href="{% url 'users:profile' %}"
+                      ><img src="{% static 'circus/images/left-imgs/img-11.jp' %}g" alt=""
                     /></a>
                   </div>
                   <div class="tutor_content_dt">
                     <div class="tutor150">
-                      <a href="instructor_profile_view.html" class="tutor_name"
+                      <a href="{% url 'users:profile' %}" class="tutor_name"
                         >Sunny William</a
                       >
                       <div class="mef78" title="Verify">
@@ -449,13 +450,13 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="fcrse_1 mt-30">
                   <div class="tutor_img">
-                    <a href="instructor_profile_view.html"
-                      ><img src="images/left-imgs/img-12.jpg" alt=""
+                    <a href="{% url 'users:profile' %}"
+                      ><img src="{% static 'circus/images/left-imgs/img-12.jp' %}g" alt=""
                     /></a>
                   </div>
                   <div class="tutor_content_dt">
                     <div class="tutor150">
-                      <a href="instructor_profile_view.html" class="tutor_name"
+                      <a href="{% url 'users:profile' %}" class="tutor_name"
                         >Neha Smith</a
                       >
                       <div class="mef78" title="Verify">
@@ -495,13 +496,13 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="fcrse_1 mt-30">
                   <div class="tutor_img">
-                    <a href="instructor_profile_view.html"
-                      ><img src="images/left-imgs/img-13.jpg" alt=""
+                    <a href="{% url 'users:profile' %}"
+                      ><img src="{% static 'circus/images/left-imgs/img-13.jp' %}g" alt=""
                     /></a>
                   </div>
                   <div class="tutor_content_dt">
                     <div class="tutor150">
-                      <a href="instructor_profile_view.html" class="tutor_name"
+                      <a href="{% url 'users:profile' %}" class="tutor_name"
                         >Sukhwinder Singh</a
                       >
                       <div class="mef78" title="Verify">
@@ -541,13 +542,13 @@
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="fcrse_1 mt-30">
                   <div class="tutor_img">
-                    <a href="instructor_profile_view.html"
-                      ><img src="images/left-imgs/img-14.jpg" alt=""
+                    <a href="{% url 'users:profile' %}"
+                      ><img src="{% static 'circus/images/left-imgs/img-14.jp' %}g" alt=""
                     /></a>
                   </div>
                   <div class="tutor_content_dt">
                     <div class="tutor150">
-                      <a href="instructor_profile_view.html" class="tutor_name"
+                      <a href="{% url 'users:profile' %}" class="tutor_name"
                         >Saloni Prabhakar</a
                       >
                       <div class="mef78" title="Verify">
@@ -599,4 +600,4 @@
       </div>
     </div>
   </div>
-</div>
+{% endblock %}

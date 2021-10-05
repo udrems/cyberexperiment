@@ -8,10 +8,10 @@
     <span class="collapse_menu--label"></span>
   </button>
   <div class="main_logo" id="logo">
-    <a href="index.html"
+    <a href="{% url 'core:dashboard' %}"
       ><img src="{% static 'core/trans.png' %}" alt="" width="150"
     /></a>
-    <a href="index.html"
+    <a href="{% url 'core:dashboard' %}"
       ><img
         class="logo-inverse"
         src="{% static 'core/trans.png' %}"
@@ -52,7 +52,7 @@
           href="{% url 'lab:create_course' %}"
           class="upload_btn"
           title="Create New Course"
-          >Create New Content</a
+          >Start New Experiment</a
         >
       </li>
       <li class="ui dropdown">
@@ -210,7 +210,7 @@
             >Paid Memberships</a
           >
           <a href="{% url 'users:setting' %}" class="item channel_item">Setting</a>
-          <a href="help.html" class="item channel_item">Help</a>
+          <a href="#" class="item channel_item">Help</a>
           <a href="{% url 'lab:feedback' %}" class="item channel_item">Send Feedback</a>
           <a href="{% url 'account_logout' %}" class="item channel_item">Sign Out</a>
         </div>

@@ -1,9 +1,15 @@
 from django.urls import path
 
 from .views import (
+    AllCreator,
     Analytic,
+    Checkout,
+    CourseDetail,
     CreateCourse,
+    Explore,
     FeedBack,
+    LiveVideo,
+    Membership,
     Message,
     MyContent,
     Notification,
@@ -19,4 +25,10 @@ urlpatterns = [
     path("message/", Message.as_view(), name="message"),
     path("notification/", Notification.as_view(), name="notification"),
     path("feedback/", FeedBack.as_view(), name="feedback"),
+    path("experiment/", CourseDetail.as_view(), name="course_detail"),
+    path("watch_experiment/", LiveVideo.as_view(), name="watch_experiment"),
+    path("creators/", AllCreator.as_view(), name="creators"),
+    path("explore_experiments/", Explore.as_view(), name="explore"),
+    path("membership/", Membership.as_view(), name="membership"),
+    path("checkout/", Checkout.as_view(), name="checkout"),
 ]
