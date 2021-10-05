@@ -36,3 +36,11 @@ class CourseDetail(generic.TemplateView):
 
 class LiveVideo(generic.TemplateView):
     template_name = "circus/live_output.html"
+
+
+class AllCreator(generic.TemplateView):
+    template_name = "circus/all_instructor.html"
+
+
+class Explore(generic.TemplateView):
+    template_name = "circus/explore.html"

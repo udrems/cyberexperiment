@@ -1,9 +1,11 @@
 from django.urls import path
 
 from .views import (
+    AllCreator,
     Analytic,
     CourseDetail,
     CreateCourse,
+    Explore,
     FeedBack,
     LiveVideo,
     Message,
@@ -23,4 +25,6 @@ urlpatterns = [
     path("feedback/", FeedBack.as_view(), name="feedback"),
     path("experiment/", CourseDetail.as_view(), name="course_detail"),
     path("watch_experiment/", LiveVideo.as_view(), name="watch_experiment"),
+    path("creators/", AllCreator.as_view(), name="creators"),
+    path("explore_experiments/", Explore.as_view(), name="explore"),
 ]

@@ -4,19 +4,13 @@
     <div class="left_section">
       <ul>
         <li class="menu--item">
-          <a href="index.html" class="menu--link active" title="Home">
+          <a href="{% url 'core:dashboard' %}" class="menu--link active" title="Home">
             <i class="uil uil-home-alt menu--icon"></i>
             <span class="menu--label">Home</span>
           </a>
         </li>
         <li class="menu--item">
-          <a href="live_streams.html" class="menu--link" title="Live Streams">
-            <i class="uil uil-kayak menu--icon"></i>
-            <span class="menu--label">Live Streams</span>
-          </a>
-        </li>
-        <li class="menu--item">
-          <a href="explore.html" class="menu--link" title="Explore">
+          <a href="{% url 'lab:explore' %}" class="menu--link" title="Explore">
             <i class="uil uil-search menu--icon"></i>
             <span class="menu--label">Explore</span>
           </a>
@@ -32,11 +26,10 @@
 
               <a href="#" class="sub_menu--link">{{cat.title}}</a>
               {% endfor %}
-            </li>
-          </ul>
+
         </li>
         <li class="menu--item">
-          <a href="saved_courses.html" class="menu--link" title="Saved Courses">
+          <a href="#" class="menu--link" title="Saved Courses">
             <i class="uil uil-heart-alt menu--icon"></i>
             <span class="menu--label">Saved Video</span>
           </a>
@@ -48,7 +41,7 @@
       <ul>
         <li class="menu--item">
           <a
-            href="all_instructor.html"
+            href="{% url 'lab:creators' %}"
             class="menu--link"
             title="Browse Instructors"
           >
@@ -71,14 +64,14 @@
           </a>
         </li>
         <li class="menu--item">
-          <a href="help.html" class="menu--link" title="Help">
+          <a href="#" class="menu--link" title="Help">
             <i class="uil uil-question-circle menu--icon"></i>
             <span class="menu--label">Help</span>
           </a>
         </li>
         <li class="menu--item">
           <a
-            href="report_history.html"
+            href="#"
             class="menu--link"
             title="Report History"
           >
@@ -100,14 +93,14 @@
     </div>
     <div class="left_footer">
       <ul>
-        <li><a href="about_us.html">About</a></li>
-        <li><a href="press.html">Press</a></li>
-        <li><a href="contact_us.html">Contact Us</a></li>
-        <li><a href="coming_soon.html">Advertise</a></li>
-        <li><a href="coming_soon.html">Developers</a></li>
-        <li><a href="terms_of_use.html">Copyright</a></li>
-        <li><a href="terms_of_use.html">Privacy Policy</a></li>
-        <li><a href="terms_of_use.html">Terms</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Advertise</a></li>
+        <li><a href="#">Developers</a></li>
+        <li><a href="#">Copyright</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
       </ul>
       <div class="left_footer_content">
         <p>© 2021 <strong>Cyber Experiment</strong>. All Rights Reserved.</p>

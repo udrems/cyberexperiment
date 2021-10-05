@@ -1,5 +1,5 @@
-﻿base new
-
+﻿{% extends 'circus/base_three/base.html' %} {% load static %} {% block title %}
+Cyber Experiment | Membership {% endblock title %} {% block content %}
 <div class="wrapper _bg4586 _new89">
   <div class="_215b15">
     <div class="container">
@@ -11,7 +11,7 @@
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="index.html">Home</a>
+                      <a href="{% url 'core:dashboard' %}">Home</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
                       Paid Membership
@@ -40,7 +40,7 @@
                 <div class="save_price">Save $79 when paid annually</div>
               </div>
               <div class="membership__right">
-                <img src="images/membership/icon-1.svg" alt="" />
+                <img src="{% static 'circus/images/membership/icon-1.svg' %}" alt="" />
               </div>
             </div>
             <div class="membership_des">
@@ -267,7 +267,7 @@
                 <div class="save_price">Save $189 when paid annually</div>
               </div>
               <div class="membership__right">
-                <img src="images/membership/icon-2.svg" alt="" />
+                <img src="{% static 'circus/images/membership/icon-2.svg' %}" alt="" />
               </div>
             </div>
             <div class="membership_des">
@@ -679,7 +679,7 @@
                       aria-expanded="false"
                       aria-controls="collapsefive2"
                     >
-                      Edututs+ isn’t for me. Can I have a refund?
+                      Cyber Experiment isn’t for me. Can I have a refund?
                     </a>
                   </div>
                 </div>
@@ -760,7 +760,7 @@
                       aria-expanded="false"
                       aria-controls="collapseeight2"
                     >
-                      Is Edututs+ safe and secure for online transactions?
+                      Is Cyber Experiment safe and secure for online transactions?
                     </a>
                   </div>
                 </div>
@@ -810,3 +810,4 @@
     </div>
   </div>
 </div>
+{% endblock %}
