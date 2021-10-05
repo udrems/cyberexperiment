@@ -1,3 +1,4 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import TemplateView
 
 
@@ -33,5 +34,5 @@ class InstructorView(TemplateView):
     template_name = "core/instructor.html"
 
 
-class Dashboard(TemplateView):
+class Dashboard(LoginRequiredMixin, TemplateView):
     template_name = "circus/index.html"
