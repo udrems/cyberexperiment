@@ -3,11 +3,13 @@ from django.urls import path
 from .views import (
     AllCreator,
     Analytic,
+    Checkout,
     CourseDetail,
     CreateCourse,
     Explore,
     FeedBack,
     LiveVideo,
+    Membership,
     Message,
     MyContent,
     Notification,
@@ -27,4 +29,6 @@ urlpatterns = [
     path("watch_experiment/", LiveVideo.as_view(), name="watch_experiment"),
     path("creators/", AllCreator.as_view(), name="creators"),
     path("explore_experiments/", Explore.as_view(), name="explore"),
+    path("membership/", Membership.as_view(), name="membership"),
+    path("checkout/", Checkout.as_view(), name="checkout"),
 ]

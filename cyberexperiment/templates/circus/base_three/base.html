@@ -1,36 +1,49 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, shrink-to-fit=9" />
-    <meta name="description" content="Gambolthemes" />
-    <meta name="author" content="Gambolthemes" />
-    <title>Cursus - Paid Membership</title>
+    <meta name="description" content="#" />
+    <meta name="author" content="#" />
+    <title>{% block title %} {% endblock title %}</title>
 
-    <link rel="icon" type="image/png" href="images/fav.png" />
+    <link rel="icon" type="image/png" href="{% static 'core/trans.png' %}" />
 
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,700,500"
       rel="stylesheet"
     />
-    <link href="vendor/unicons-2.0.1/css/unicons.css" rel="stylesheet" />
-    <link href="css/vertical-responsive-menu.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/responsive.css" rel="stylesheet" />
-    <link href="css/night-mode.css" rel="stylesheet" />
-
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
-    <link href="vendor/OwlCarousel/assets/owl.carousel.css" rel="stylesheet" />
     <link
-      href="vendor/OwlCarousel/assets/owl.theme.default.min.css"
+      href="{% static 'circus/vendor/unicons-2.0.1/css/unicons.css' %}"
       rel="stylesheet"
     />
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="{% static 'circus/css/vertical-responsive-menu.min.css' %}"
+      rel="stylesheet"
+    />
+    <link href="{% static 'circus/css/style.css' %}" rel="stylesheet" />
+    <link href="{% static 'circus/css/responsive.css' %}" rel="stylesheet" />
+    <link href="{% static 'circus/css/night-mode.css' %}" rel="stylesheet" />
+
+    <link
+      href="{% static 'circus/vendor/fontawesome-free/css/all.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'circus/vendor/OwlCarousel/assets/owl.carousel.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'circus/vendor/OwlCarousel/assets/owl.theme.default.min.css' %}"
+      rel="stylesheet"
+    />
+    <link href="{% static 'circus/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="vendor/semantic/semantic.min.css"
+      href="{% static 'circus/vendor/semantic/semantic.min.css' %}"
     />
   </head>
   <body>
@@ -39,14 +52,22 @@
         <div class="row">
           <div class="col-12">
             <div class="back_link">
-              <a href="index.html" class="hde151">Back To Cursus</a>
-              <a href="index.html" class="hde152">Back</a>
+              <a href="{% url 'core:dashboard' %}" class="hde151"
+                >Back To Dashboard</a
+              >
+              <a href="{% url 'core:dashboard' %}" class="hde152">Back</a>
             </div>
             <div class="ml_item">
               <div class="main_logo main_logo15" id="logo">
-                <a href="index.html"><img src="images/logo.svg" alt="" /></a>
-                <a href="index.html"
-                  ><img class="logo-inverse" src="images/ct_logo.svg" alt=""
+                <a href="{% url 'core:dashboard' %}"
+                  ><img src="{% static 'core/trans.png' %}" alt=""
+                /></a>
+                <a href="{% url 'core:dashboard' %}"
+                  ><img
+                    class="logo-inverse"
+                    src="{% static 'core/trans.png' %}"
+                    alt=""
+                    width="200"
                 /></a>
               </div>
             </div>
@@ -54,12 +75,15 @@
               <ul>
                 <li class="ui top right pointing dropdown">
                   <a href="#" class="opts_account">
-                    <img src="images/hd_dp.jpg" alt="" />
+                    <img src="{% static 'circus/images/hd_dp.jpg' %}" alt="" />
                   </a>
                   <div class="menu dropdown_account">
                     <div class="channel_my">
                       <div class="profile_link">
-                        <img src="images/hd_dp.jpg" alt="" />
+                        <img
+                          src="{% static 'circus/images/hd_dp.jpg' %}"
+                          alt=""
+                        />
                         <div class="pd_content">
                           <div class="rhte85">
                             <h6>Joginder Singh</h6>
@@ -68,19 +92,14 @@
                             </div>
                           </div>
                           <span
-                            ><a
-                              href="https://gambolthemes.net/cdn-cgi/l/email-protection"
-                              class="__cf_email__"
-                              data-cfemail="96f1f7fbf4f9faafa2a5d6f1fbf7fffab8f5f9fb"
-                              >[email&#160;protected]</a
+                            ><a href="#" class="__cf_email__" data-cfemail="#"
+                              >chidosiky2015@gmail.com</a
                             ></span
                           >
                         </div>
                       </div>
-                      <a
-                        href="my_instructor_profile_view.html"
-                        class="dp_link_12"
-                        >View Instructor Profile</a
+                      <a href="{% url 'users:profile' %}" class="dp_link_12"
+                        >Creator's Profile</a
                       >
                     </div>
                     <div class="night_mode_switch__btn">
@@ -92,11 +111,11 @@
                       </a>
                     </div>
                     <a
-                      href="instructor_dashboard.html"
+                      href="{% url 'core:dashboard' %}"
                       class="item channel_item"
-                      >Cursus Dashboard</a
+                      >Dashboard</a
                     >
-                    <a href="sign_in.html" class="item channel_item"
+                    <a href="{% url 'account_logout' %}" class="item channel_item"
                       >Sign Out</a
                     >
                   </div>
@@ -114,31 +133,31 @@
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-6">
               <div class="item_f1">
-                <a href="about_us.html">About</a>
-                <a href="our_blog.html">Blog</a>
-                <a href="career.html">Careers</a>
-                <a href="press.html">Press</a>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
               <div class="item_f1">
-                <a href="help.html">Help</a>
-                <a href="coming_soon.html">Advertise</a>
-                <a href="coming_soon.html">Developers</a>
-                <a href="contact_us.html">Contact Us</a>
+                <a href="#">Help</a>
+                <a href="#">Advertise</a>
+                <a href="#">Developers</a>
+                <a href="#">Contact Us</a>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
               <div class="item_f1">
-                <a href="terms_of_use.html">Copyright Policy</a>
-                <a href="terms_of_use.html">Terms</a>
-                <a href="terms_of_use.html">Privacy Policy</a>
-                <a href="sitemap.html">Sitemap</a>
+                <a href="#">Copyright Policy</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Sitemap</a>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
               <div class="item_f3">
-                <a href="#" class="btn1542">Teach on Cursus</a>
+                <a href="#" class="btn1542">Start New Experiment</a>
                 <div class="lng_btn">
                   <div
                     class="ui language bottom right pointing dropdown floating"
@@ -380,15 +399,16 @@
                   <div class="col-md-6">
                     <ul class="fotb_left">
                       <li>
-                        <a href="index.html">
+                        <a href="{% url 'core:dashboard' %}">
                           <div class="footer_logo">
-                            <img src="images/logo1.svg" alt="" />
+                            <img src="{% static 'core/trans.png' %}" alt="" />
                           </div>
                         </a>
                       </li>
                       <li>
                         <p>
-                          © 2020 <strong>Cursus</strong>. All Rights Reserved.
+                          © 2020 <strong>Cyber Experiment</strong>. All Rights
+                          Reserved.
                         </p>
                       </li>
                     </ul>
@@ -412,15 +432,11 @@
       </footer>
     </div>
 
-    <script
-      data-cfasync="false"
-      src="https://gambolthemes.net/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/OwlCarousel/owl.carousel.js"></script>
-    <script src="vendor/semantic/semantic.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/night-mode.js"></script>
+    <script src="{% static 'circus/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'circus/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'circus/vendor/OwlCarousel/owl.carousel.js' %}"></script>
+    <script src="{% static 'circus/vendor/semantic/semantic.min.js' %}"></script>
+    <script src="{% static 'circus/js/custom.js' %}"></script>
+    <script src="{% static 'circus/js/night-mode.js' %}"></script>
   </body>
 </html>

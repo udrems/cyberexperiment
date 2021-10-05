@@ -44,3 +44,11 @@ class AllCreator(generic.TemplateView):
 
 class Explore(generic.TemplateView):
     template_name = "circus/explore.html"
+
+
+class Membership(generic.TemplateView):
+    template_name = "circus/membership.html"
+
+
+class Checkout(generic.TemplateView):
+    template_name = "circus/checkout_membership.html"
