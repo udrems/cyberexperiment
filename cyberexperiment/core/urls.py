@@ -7,6 +7,7 @@ from .views import (
     ContactView,
     Dashboard,
     EventView,
+    Explore,
     FollowerView,
     HomePageView,
     InstructorView,
@@ -24,4 +25,5 @@ urlpatterns = [
     path("follower/", FollowerView.as_view(), name="follower"),
     path("instructor/", InstructorView.as_view(), name="instructor"),
     path("dashboard/", Dashboard.as_view(), name="dashboard"),
+    path("explore/", Explore.as_view(), name="explore"),
 ]
