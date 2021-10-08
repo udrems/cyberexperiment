@@ -10,7 +10,7 @@
           <div class="col-lg-2">
             <div class="logo-cat-wrap">
               <div class="logo-part">
-                <a href="index.html">
+                <a href="{% url 'core:home' %}">
                   <img
                     class="normal-logo"
                     src="{% static 'core/trans.png' %}"
@@ -43,26 +43,30 @@
                         current-menu-item
                       "
                     >
-                      <a href="{% url 'core:home' %}">Home</a>
+                      <a href="{% url 'core:instructor' %}">Researcher</a>
                       <!-- //.mega-menu -->
+                    </li>
+                    <li class="menu-item">
+                      <a href="{% url 'core:follower' %}">Student</a>
+                    </li>
+
+                    <li class="menu-item">
+                      <a href="{% url 'core:explore' %}">Explore</a>
                     </li>
                     <li class="menu-item">
                       <a href="{% url 'core:about' %}">About</a>
                     </li>
 
                     <li class="menu-item">
-                      <a href="{% url 'core:instructor' %}">Instructor</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="{% url 'core:follower' %}">Follower</a>
-                    </li>
-
-                    <li class="menu-item">
-                      <a href="{% url 'core:blog' %}">Blog</a>
-                    </li>
-
-                    <li class="menu-item">
                       <a href="{% url 'core:contact' %}">Contact</a>
+                    </li>
+                    <li class="menu-item">
+                      {% if user.is_authenticated %}
+
+                      <a href="{% url 'core:dashboard' %}">Dashboard</a>
+                      {% else %}
+                      <a href="{% url 'account_login' %}">Login</a>
+                      {% endif %}
                     </li>
                   </ul>
                   <!-- //.nav-menu -->
@@ -72,112 +76,13 @@
             </div>
           </div>
           <div class="col-lg-2 text-right">
-            <div class="expand-btn-inner">
-              <ul>
-                <li>
-                  <a
-                    class="hidden-xs rs-search"
-                    data-target=".search-modal"
-                    data-toggle="modal"
-                    href="#"
-                  >
-                    <i class="flaticon-search"></i>
-                  </a>
-                </li>
-                <li class="user-icon last-icon">
-                  <a href="{% url 'account_login' %}"
-                    ><i class="fa fa-user" aria-hidden="true"></i
-                  ></a>
-                </li>
-              </ul>
-              <span>
-                <a id="nav-expander" class="nav-expander">
-                  <span class="dot1"></span>
-                  <span class="dot2"></span>
-                  <span class="dot3"></span>
-                </a>
-              </span>
-            </div>
+
           </div>
         </div>
       </div>
     </div>
     <!-- Menu End -->
 
-    <!-- Canvas Menu start -->
-    <nav class="right_menu_togle hidden-md">
-      <div class="close-btn">
-        <div id="nav-close">
-          <div class="line">
-            <span class="line1"></span><span class="line2"></span>
-          </div>
-        </div>
-      </div>
-      <div class="canvas-logo">
-        <a href="{% url 'core:home' %}"
-          ><img src="{% static 'core/main.png' %}" alt="logo"
-        /></a>
-      </div>
-      <div class="offcanvas-text">
-        <p>
-          We denounce with righteous indige nationality and dislike men who are
-          so beguiled and demo by the charms of pleasure of the moment data com
-          so blinded by desire.
-        </p>
-      </div>
-      <div class="offcanvas-gallery">
-        <div class="gallery-img">
-          <a class="image-popup" href="assets/images/gallery/1.jpg"
-            ><img src="{% static 'core/assets/images/gallery/1.jpg' %}" alt=""
-          /></a>
-        </div>
-        <div class="gallery-img">
-          <a class="image-popup" href="assets/images/gallery/2.jpg"
-            ><img src="{% static 'core/assets/images/gallery/2.jpg' %}" alt=""
-          /></a>
-        </div>
-        <div class="gallery-img">
-          <a class="image-popup" href="assets/images/gallery/3.jpg"
-            ><img src="{% static 'core/assets/images/gallery/3.jpg' %}" alt=""
-          /></a>
-        </div>
-        <div class="gallery-img">
-          <a class="image-popup" href="assets/images/gallery/4.jpg"
-            ><img src="{% static 'core/assets/images/gallery/4.jpg' %}" alt=""
-          /></a>
-        </div>
-        <div class="gallery-img">
-          <a class="image-popup" href="assets/images/gallery/5.jpg"
-            ><img src="{% static 'core/assets/images/gallery/5.jpg' %}" alt=""
-          /></a>
-        </div>
-        <div class="gallery-img">
-          <a class="image-popup" href="assets/images/gallery/6.jpg"
-            ><img src="{% static 'core/assets/images/gallery/6.jpg' %}" alt=""
-          /></a>
-        </div>
-      </div>
-      <div class="map-img">
-        <img src="{% static 'core/assets/images/map.jpg' %}" alt="" />
-      </div>
-      <div class="canvas-contact">
-        <ul class="social">
-          <li>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-pinterest-p"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Canvas Menu end -->
   </header>
   <!--Header End-->
 </div>

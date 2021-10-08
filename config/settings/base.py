@@ -291,4 +291,4 @@ SOCIALACCOUNT_ADAPTER = "cyberexperiment.users.adapters.SocialAccountAdapter"
 # Your stuff...
 # ------------------------------------------------------------------------------
 ACCOUNT_LOGOUT_REDIRECT_URL = "/accounts/login/"
-# LOGIN_REDIRECT_URL = '/accounts/email/'
+LOGIN_REDIRECT_URL = "core:dashboard"

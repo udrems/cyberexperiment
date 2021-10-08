@@ -36,3 +36,7 @@ class InstructorView(TemplateView):
 
 class Dashboard(LoginRequiredMixin, TemplateView):
     template_name = "circus/index.html"
+
+
+class Explore(TemplateView):
+    template_name = "core/explore.html"
